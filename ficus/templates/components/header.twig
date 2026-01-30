@@ -1,0 +1,29 @@
+<header class="siteheader">
+    <div class="siteheader-inner">
+        <button class="siteheader-toggle"
+            aria-controls="siteheader-nav"
+            aria-label="Toggle main navigation">
+            <span class="siteheader-toggle-inner"></span>
+        </button>
+        {% if is.front_page %}
+            <h1 class="siteheader-logo" aria-label="{{ site.logo.alt }}">
+                {% if site.logo.url %}
+                    <img src="{{ site.logo.url }}" alt="{{ site.logo.alt }}" />
+                {% else %}
+                    {{ site.logo.svg|raw }}
+                {% endif %}
+            </h1>
+        {% else %}
+            <a href="{{ site.url }}" class="siteheader-logo">
+                {% if site.logo.url %}
+                    <img src="{{ site.logo.url }}" alt="{{ site.logo.alt }}" />
+                {% else %}
+                    {{ site.logo.svg|raw }}
+                {% endif %}
+            </a>
+        {% endif %}
+        <nav id="siteheader-nav" class="siteheader-nav" role="navigation" aria-label="Main navigation">
+            {{ menu('header-menu')|raw }}
+        </nav>
+    </div>
+</header>

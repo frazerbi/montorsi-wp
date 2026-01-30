@@ -1,0 +1,16 @@
+@mixin masked-icon($icon, $size: 1.6rem, $color: currentColor) {
+	width: $size;
+	height: $size;
+	display: inline-flex;
+	align-self: end;
+	line-height: 1;
+	mask: var(--icon-#{$icon});
+	-webkit-mask: var(--icon-#{$icon});
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-position: center;
+	-webkit-mask-position: center;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	background-color: $color;
+}

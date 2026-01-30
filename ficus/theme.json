@@ -1,0 +1,178 @@
+{
+	"version": 2,
+	"settings": {
+		"appearanceTools": false,
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"custom": false,
+			"customGradient": false,
+			"palette": [
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#111"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "White smoke",
+					"slug": "white-smoke",
+					"color": "#F2F2F2"
+				},
+				{
+					"name": "Gray medium",
+					"slug": "gray-medium",
+					"color": "#AAAAAA"
+				},
+				{
+					"name": "Delft Blue",
+					"slug": "delft-blue",
+					"color": "#243760"
+				},
+				{
+					"name": "Blue Gray",
+					"slug": "blue-gray",
+					"color": "#6C9DD9"
+				},
+				{
+					"name": "Moonstone",
+					"slug": "moonstone",
+					"color": "#53C2D7"
+				}
+			],
+			"gradients": [
+				{
+					"name": "Brand Gradient",
+					"slug": "brand-gradient",
+					"gradient": "linear-gradient(135deg, #243760 0%, #6C9DD9 100%)"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+            "lineHeight": false,
+            "dropCap": false,
+            "fontStyle": false,
+            "fontWeight": false,
+            "letterSpacing": false,
+            "textDecoration": false,
+            "textTransform": false,
+            "fontSizes": [
+				{
+					"name": "Exra Small",
+					"slug": "extra-small",
+					"size": "1rem"
+				},
+				{
+					"name": "Small",
+					"slug": "small",
+					"size": "1.4rem"
+				},
+				{
+					"name": "Normal",
+					"slug": "normal",
+					"size": "2rem"
+				},
+				{
+					"name": "Medium",
+					"slug": "medium",
+					"size": "2.5rem"
+				},
+				{
+					"name": "Large",
+					"slug": "large",
+					"size": "3.2rem"
+				},
+				{
+					"name": "Extra Large",
+					"slug": "extra-large",
+					"size": "4rem"
+				}
+			],
+			"fontFamilies": [
+				{ "name": "Primary", "slug": "primary", "fontFamily": "Barlow" },
+				{ "name": "Secondary", "slug": "secondary", "fontFamily": "DM Sans" }
+			]
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": null,
+			"unit": "rem"
+		},
+		"layout": {
+			"contentSize": "72rem"
+		}
+	},
+	"styles": {
+		"elements": {
+			"h1": { "typography": { "fontFamily": "var(--font-family-primary)" } },
+			"h2": { "typography": { "fontFamily": "var(--font-family-primary)" } },
+			"link": { "color": { "text": "var(--color-primary)" } },
+			"button": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			}
+		},
+		"spacing": {
+			"margin": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0"
+			}
+		},
+   		"blocks": {
+			"core/paragraph": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+			"core/heading": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+			"core/list": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+			"core/group": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+
+			"core/column": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+			"core/quote": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			},
+			"core/image": {
+				"spacing": {
+					"margin": { "top": "0", "bottom": "0", "left": "0", "right": "0" }
+				}
+			}
+		}
+	},
+	"custom": {
+		"layout": {
+			"disableContentMargins": true
+		}
+	},
+	"defaultFontSizes": false,
+	"customFontSize": false,
+	"customTemplates": [],
+  	"templateParts": []
+}

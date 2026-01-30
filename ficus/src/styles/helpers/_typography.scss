@@ -1,0 +1,90 @@
+@use 'breakpoints' as *;
+
+:root {
+    --font-size-root: 10px;
+    --font-family-primary: var(--wp--preset--font-family--primary);
+    --font-family-secondary: var(--wp--preset--font-family--secondary);
+    //
+    --font-lineheight-tight: 1;
+    --font-lineheight-normal: 1.5;
+    --font-lineheight-loose: 1.8; 
+}
+
+@include breakpoint(tablet-landscape) {
+  :root {
+    // wp--preset--font-size default (mobile) definite in theme.json
+    --wp--preset--font-size--medium: 3rem;
+    --wp--preset--font-size--large: 4.5rem;
+    --wp--preset--font-size--extra-large: 7rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %headings !optional;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    line-height: inherit;
+    &:has(.icon) {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}
+
+%font-base {
+    font-family: var(--font-family-primary);
+    line-height: var(--font-lineheight-normal);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important;
+    font-kerning: normal;
+    margin: 0;
+}
+
+%font-primary-xs {
+    @extend %font-base;
+    font-size: var(--wp--preset--font-size--extra-small);
+    
+}
+
+%font-primary-s {
+    @extend %font-base;
+    font-size: var(--wp--preset--font-size--small);
+}
+%font-primary-s-upper-bold {
+    @extend %font-primary-s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    
+}
+
+%font-primary-std {
+    @extend %font-base;
+    font-size: var(--wp--preset--font-size--normal);
+}
+
+
+%font-primary-m {
+    @extend %font-base;
+    line-height: var(--font-lineheight-tight);
+    font-size: var(--wp--preset--font-size--medium);
+}
+
+
+%font-primary-l {
+    @extend %font-base;
+    line-height: var(--font-lineheight-tight);
+    font-size: var(--wp--preset--font-size--large);
+}
+
+%font-primary-xl {
+    @extend %font-base;
+    line-height: var(--font-lineheight-tight);
+    font-size: var(--wp--preset--font-size--extra-large);
+}

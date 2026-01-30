@@ -1,0 +1,99 @@
+@use '../helpers' as *;
+
+/* Visual Editor TITLE */
+.editor-visual-editor__post-title-wrapper {
+	h1 {
+		@extend %font-primary-l;
+		margin: 0;
+		padding: 0 2rem 2rem;
+		opacity: 0.3;
+		border-bottom: 1px dotted currentColor;
+		&::before {
+			content:"ID Pagina: ";
+		}		
+	}
+}
+
+/* CONTENT - stilizzazione per frontend ed editor view di WordPress */
+.sitemain,
+.is-root-container {
+	.has-background,
+	*.has-background {
+		padding: 2.4rem;
+		@include breakpoint(tablet-landscape) {
+			padding: 4rem;
+		}
+	}
+	> * {
+		width: 100%;
+	}
+	h1 {
+		@extend %font-primary-xl;
+		width: 100%;
+		font-weight: bold;
+	}
+	h2 {
+		@extend %font-primary-l;
+		font-weight: bold;
+	}
+	h3 {
+		@extend %font-primary-m;
+		font-weight: bold;
+	}
+	h4 {
+		@extend %font-primary-std;
+		font-weight: bold;
+	}
+	p {
+		@extend %font-primary-std;
+	}
+	ul, ol {
+		@extend %font-primary-std;
+	}
+	blockquote {
+		color: var(--color-primary);
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+		p {
+			//
+		}
+		cite {
+			text-align: right;
+		}
+	}
+	.has-small-font-size,
+	.has-small-font-size * {
+		@extend %font-primary-s;
+	}
+	.has-medium-font-size,
+	.has-medium-font-size * {
+		@extend %font-primary-m;
+	}
+	.has-large-font-size,
+	.has-large-font-size * {
+		@extend %font-primary-l;
+	}
+	.has-extra-large-font-size,
+	.has-extra-large-font-size * {
+		@extend %font-primary-xl;
+	}
+	.wp-block-heading {
+		&.is-style-squared {
+			position: relative;
+			line-height: 1;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 1.5em;
+				height: 1.5em;
+				background-color: var(--color-tertiary-alpha-50);
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: -1;
+				left: -0.25em;
+			}
+		}
+	}
+}

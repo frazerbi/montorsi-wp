@@ -1,0 +1,141 @@
+@use '../helpers' as *;
+
+// Stili per l'editor
+.professional-block-editor {
+    .professional-card-preview {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding: 2rem;
+        border: 1px dashed #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+
+        .professional-avatar {
+            position: relative;
+            width: 100%;
+            max-width: 200px;
+            aspect-ratio: 1 / 1;
+            flex-shrink: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+
+        .professional-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            width: 100%;
+
+            h3 {
+                @extend %font-primary-m;
+                font-weight: bold;
+                color: var(--color-text);
+            }
+
+            p {
+                @extend %font-primary-s;
+                color: var(--color-text);
+            }
+        }
+
+        .professional-cta {
+            span {
+                @extend %font-primary-s-upper-bold;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Stili per frontend
+.sitemain,
+.is-root-container {
+    .professionalcard {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        &-avatar {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            flex-shrink: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                width: calc(100% - 6rem);
+                height: calc(100% - 6rem);
+                top: 3rem;
+                left: 3rem;
+                border: 1rem solid currentColor;
+            }
+            @include breakpoint(tablet-landscape) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: 2;
+                    width: 8rem;
+                    height: 8rem;
+                    bottom: -5.5rem;
+                    left: -5.5rem;
+                    background-color: currentColor;
+                }
+            }
+            img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            width: 100%;
+            @include breakpoint(tablet-landscape) {
+                padding-left: 4rem
+            }
+        }
+        
+        &-name {
+            @extend %font-primary-m;
+            font-weight: bold;
+            color: var(--color-text);
+        }
+        
+        &-role {
+            @extend %font-primary-s;
+        }
+        
+        &-cta {
+            @extend %font-primary-s-upper-bold;
+            text-decoration: none;
+        }
+        &:nth-child(3n + 1) {
+            .professionalcard-avatar {
+                color: var(--color-primary-alpha-50);
+            }
+        }
+        &:nth-child(3n + 2) {
+            .professionalcard-avatar {
+                color: var(--color-secondary-alpha-50);
+            }
+        }
+        &:nth-child(3n + 3) {
+            .professionalcard-avatar {
+                color: var(--color-tertiary-alpha-50);
+            }
+        }
+    }
+}

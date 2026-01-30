@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.sitemain,
+.is-root-container {
+	.wp-block-columns {
+		margin: 0;
+		gap: 2rem;
+		@include breakpoint(tablet-landscape) {
+			gap: 4rem;
+		}
+		.wp-block-column {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+}

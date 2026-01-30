@@ -1,0 +1,35 @@
+@use '../helpers' as *;
+
+.breadcrumbs {
+	@extend %font-primary-xs;
+	color: var(--color-text-gray);
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    &-item {
+        display: flex;
+        align-items: center;
+    }
+    
+    &-link {
+        color: currentColor;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &-text {
+        color: currentColor;
+    }
+    
+    &-separator {
+        margin: 0 0.5rem;
+        color: currentColor;
+    }
+}

@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="container mx-auto px-4">
+        {% if posts %}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for post in posts %}
+                    {% include 'components/card.twig' with { post: post } %}
+                {% endfor %}
+            </div>
+            
+            {% include 'components/pagination.twig' %}
+        {% else %}
+            <p class="text-center py-8">{{ t.general.no_posts }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

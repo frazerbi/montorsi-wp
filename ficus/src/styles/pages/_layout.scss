@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100dvh;
+}
+
+.sitemain,
+.is-root-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 3.2rem;
+	padding: 1.6rem;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint(tablet-landscape) {
+		padding: 3.2rem;
+		gap: 8rem;
+		max-width: var(--max-width);
+	}
+	& + * {
+		margin-top: auto;
+	}
+}

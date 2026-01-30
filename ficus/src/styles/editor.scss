@@ -1,0 +1,40 @@
+@use '/node_modules/modern-normalize/modern-normalize.css';
+@use 'helpers' as *;
+@use 'common';
+@use 'pages';
+@use 'components';
+
+body.block-editor-iframe__body {
+	box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: var(--font-size-root);
+    scroll-behavior: smooth; /* Supported by firefox and Chrome only. Use a fallback for unsupported browsers, if you need. */
+    overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+    font-family: var(--font-family-primary);
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: transparent;
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+}
+
+.editor-visual-editor {
+    background-color: transparent;
+}
+
+.is-root-container {
+	display: grid !important;
+}
+
+.block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	max-width: none !important;
+}
+
+li .block-editor-rich-text__editable {
+    display: inline-block;
+}
+

@@ -1,0 +1,13 @@
+<div class="pagination">
+    {% if pagination.prev %}
+        <a href="{{ pagination.prev }}" class="">
+            {{ t.general.prev }}
+        </a>
+    {% endif %}
+    
+    {% if pagination.next %}
+        <a href="{{ pagination.next }}" class="">
+            {{ t.general.next }}
+        </a>
+    {% endif %}
+</div>

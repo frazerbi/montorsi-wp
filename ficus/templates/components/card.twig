@@ -1,0 +1,23 @@
+<article class="card">
+    {% if post.thumbnail %}
+        <img 
+            src="{{ post.thumbnail.src }}" 
+            alt="{{ post.thumbnail.alt }}"
+            class="w-full h-48 object-cover"
+        >
+    {% endif %}
+    
+    <div class="p-4">
+        <h2>
+            <a href="{{ post.link }}">{{ post.title }}</a>
+        </h2>
+        
+        <div>
+            {{ post.excerpt }}
+        </div>
+        
+        <a href="{{ post.link }}">
+            {{ t.general.read_more }}
+        </a>
+    </div>
+</article>

@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+
+body.home {
+	.sitemain,
+	.is-root-container {
+		@include breakpoint(tablet-landscape) {
+			gap: 8rem;
+		}
+	}
+}

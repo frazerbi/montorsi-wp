@@ -1,0 +1,38 @@
+@use "sass:map";
+
+@mixin breakpoint($bp, $type: min) {
+  $width: map.get($bp-list, $bp);
+  @if $type == max {
+    $width: $width - 1px;
+  }
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+
+/**
+* mobile-first approach every step is from a breakpoint to a higher value
+*/
+:root {
+  --bp-mobile: 0;
+  --bp-tablet-portrait: 768px;
+  --bp-tablet-landscape: 1024px;
+  --bp-tablet-landscape-lg: 1144px;
+  --bp-desktop: 1366px;
+  --max-width: 1440px;
+  --max-reading: 720px;
+  --radius-s: 0.8rem;
+  --radius-m: 2rem;
+  --radius-l: 3.2rem;
+}
+
+/* useful for loops on media breakpoints */
+$bp-list: (
+  mobile: 0,
+  tablet-portrait: 768px,
+  tablet-landscape: 1024px,
+  tablet-landscape-lg: 1144px,
+  desktop: 1366px,
+  max-width: 1440px
+);
+

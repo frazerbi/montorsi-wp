@@ -1,0 +1,42 @@
+
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="archive-page container mx-auto px-4 py-8">
+        {# Header archivio #}
+        <header class="mb-8 text-center">
+            {% if archive.title %}
+                <h1 class="text-4xl font-bold mb-4">{{ archive.title }}</h1>
+            {% endif %}
+
+            {% if archive.description %}
+                <div class="text-gray-600 max-w-2xl mx-auto">
+                    {{ archive.description }}
+                </div>
+            {% endif %}
+        </header>
+
+        {# Filtri opzionali #}
+        {% if archive.filters %}
+            <div class="archive-filters mb-8">
+                {% include 'components/archive-filters.twig' with { filters: archive.filters } %}
+            </div>
+        {% endif %}
+
+        {# Griglia posts #}
+        {% if posts %}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for post in posts %}
+                    {% include 'components/card.twig' with { post: post } %}
+                {% endfor %}
+            </div>
+
+            {# Paginazione #}
+            {% include 'components/pagination.twig' %}
+        {% else %}
+            <div class="text-center py-12">
+                <p class="text-gray-600">{{ t.general.no_posts }}</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

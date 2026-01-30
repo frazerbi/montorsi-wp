@@ -1,0 +1,14 @@
+
+/db-data
+/wordpress
+*/node_modules
+*/vendor
+*.lock
+*lock.*
+*/cache
+*/dist
+.env
+*.log
+.DS_Store
+.vscode/
+ftp-kr.json

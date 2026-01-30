@@ -1,0 +1,23 @@
+@use '../helpers' as *;
+
+.sitemain,
+.is-root-container {
+	.wp-block-separator {
+		border-top-width: 4px;
+		margin-top: 4rem;
+    	margin-bottom: 4rem;
+		&.has-background {
+			padding: 0;
+		}
+		&.is-style-dots {
+			line-height: 0;
+			&::before {
+				font-size: 6rem;
+				letter-spacing: 2rem;
+				padding-left: 1rem;
+				line-height: 1rem;
+				vertical-align: middle;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+{% set map_link = "https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=it&sa=X&geocode=KS0_RV49w4ZHMVlJtMdaPTOz&daddr=Piazza+Risorgimento,+16,+20057+Assago+MI" %}
+{% set docto_lnk = "https://www.doctolib.it/centro-medico/assago/ctr-piu?pid=practice-464558&utm_source=google_appointment_redirect&utm_campaign=gmb&utm_medium=organic&hl=it-IT&gei=aVjyaKOVDbWO9u8PmevB2AU&rwg_token=ACgRB3e1qln9KtQtBFkw8sDzIKwJhbhWkgb35SspdcIMJLFOrGfKidS2obJEx3X1o9tmNNTf-iRm5eXldYACtgvfVnjxHAiDXQ%3D%3D" %}
+{% block content %}
+	<h1 class="splash-logo" aria-label="{{ site.logo.alt }}">
+		{% if site.logo.url %}
+			<img src="{{ site.logo.url }}" alt="{{ site.logo.alt }}" />
+		{% else %}
+			{{ site.logo.svg|raw }}
+		{% endif %}
+	</h1>
+	<section class="splash-content">
+		<p><i>Telefono/Whatsapp</i>: <a href="tel:0248842883">02 4884 2883</a> </p>
+		<p><i>Indirizzo</i>: <a href="{{map_link}}" target="_blank">Piazza Risorgimento, 16, 20057 Assago MI</a></p>
+		<a class="splash-cta" href="{{docto_lnk}}" target="_blank">Prenota una visita</a>
+	</section>
+{% endblock %}

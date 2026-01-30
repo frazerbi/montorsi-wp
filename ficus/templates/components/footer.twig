@@ -1,0 +1,44 @@
+<footer class="sitefooter">
+    <h2 class="visually-hidden">{{ t.footer.footer_title|default('Footer') }}</h2>
+    <div class="sitefooter-inner">
+        {# Area primaria #}
+        <div class="widgetarea widgetarea--primary">
+            {% if is_active_sidebar('footer-primary') %}
+                {{ sidebar.footer_primary|raw }}
+            {% else %}
+                <div class="footer-widget">
+                    <img src="{{ site.logo.url }}" alt="{{ site.title }}" class="footer-logo" />
+                    <p>{{ site.description }}</p>
+                </div>
+            {% endif %}
+        </div>
+
+        {# Area secondaria #}
+        <div class="widgetarea widgetarea--secondary">
+            {# Widget secondari #}
+            {% if is_active_sidebar('footer-secondary') %}
+                {{ sidebar.footer_secondary|raw }}
+            {% else %}
+                <div class="footer-widget">
+                    <h3>{{ t.footer.explore|default('Explore') }}</h3>
+                    {{ menu('footer-menu')|raw }}
+                </div>
+            {% endif %}
+        </div>
+        {# Area credits #}
+        <div class="widgetarea widgetarea--credits">
+            {% if is_active_sidebar('footer-credits') %}
+                {{ sidebar.footer_credits|raw }}
+            {% else %}
+                <div class="footer-copyright">
+                    <p>&copy; {{ "now"|date('Y') }} {{ site.title }}. {{ t.footer.all_rights|default('All rights reserved') }}</p>
+                </div>
+                <div class="footer-legal">
+                    <p>{{ t.footer.legal_info|default('Registered office:') }} {{ t.footer.address|default('') }}</p>
+                    <p>{{ t.footer.vat_info|default('') }}</p>
+                    <a href="/privacy-policy">{{ t.footer.privacy|default('Privacy and Cookie Policy') }}</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,134 @@
+@use '../helpers' as *;
+
+.wpforms {
+	&-hidden {
+		display: none;
+	}
+	&-container {
+		max-width: 64rem;
+		margin: 0 auto;
+	}
+	&-form,
+	&-field-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+	}
+	&-field {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+			display: block;
+			legend {
+				font-weight: 500;
+				margin-bottom: 1.2rem;
+			}
+		}
+		input:not([type='radio']):not([type='checkbox']),
+		select,
+		textarea {
+			@extend %font-primary-s;
+			color: var(--color-text);
+			background-color: transparent;
+			border: 1px solid currentColor;
+			border-radius: 0.5rem;
+			line-height: 1;
+			padding: 0.5rem 1rem;
+			height: 4.4rem;
+			&:focus {
+				background-color: var(--color-secondary-bg);
+			}
+			&[aria-invalid='true'] {
+				border-color: var(--color-error);
+			}
+		}
+		input[type='radio'],
+		input[type='checkbox'] {
+			@extend %visually-hidden;
+			& + label {
+				position: relative;
+				display: flex;
+				align-items: start;
+				gap: 0.8rem;
+				&::before {
+					content: '';
+					display: flex;
+					flex-grow: 1;
+					flex-shrink: 0;
+					width: 2rem;
+					height: 2rem;
+					border: 1px solid var(--color-primary);
+					border-radius: 0.4rem;
+				}
+			}
+		}
+		input[type='checkbox'] {
+			&:checked + label {
+				&::before {
+					background-color: var(--color-primary);
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0.5rem;
+					left: 0.5rem;
+					display: block;
+					clip-path: path("M11.6941 0.195265C12.0566 0.491285 12.1036 1.01694 11.7992 1.36934L4.59917 9.70266C4.4396 9.88735 4.20555 9.99576 3.95749 9.99988C3.70944 10.004 3.47171 9.90342 3.30575 9.72414L0.22004 6.39081C-0.096638 6.04872 -0.0681137 5.52181 0.283751 5.21393C0.635616 4.90605 1.17758 4.93378 1.49426 5.27587L3.92055 7.89687L10.4865 0.297359C10.791 -0.0550467 11.3317 -0.100756 11.6941 0.195265Z");
+					width: 12px;
+					height: 10px; 
+					background: var(--color-text-inverted);
+					
+				}
+			}
+		}
+		input[type='radio'] {
+			& + label {
+				&::before {
+					border-radius: 50%;
+				}
+			}
+			&:checked + label {
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0.4rem;
+					left: 0.4rem;
+					display: block;
+					width: 1.2rem;
+					height: 1.2rem;
+					background-color: currentColor;
+					border-radius: 50%;
+				}
+			}
+		}
+		&-label {
+			@extend %font-primary-s;
+			.wpforms-required-label {
+				display: none;
+			}
+		}
+		ul {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 1.6rem;
+			li {
+				display: flex;
+				align-items: center;
+				gap: 0.8rem;
+			}		
+		}
+		.wpforms-error {
+			@extend %font-primary-xs;
+			color: var(--color-error);
+			font-style: normal;
+		}
+	}
+	&-submit {
+		@include cta-full;
+	}
+}

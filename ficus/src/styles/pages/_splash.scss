@@ -1,0 +1,64 @@
+@use '../helpers' as *;
+
+body.twig-template-splash {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100dvh;
+	.sitemain {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		max-width: none;
+		width: 90vw;
+		height: 90dvh;
+		border-radius: var( --radius-s);
+		background-image: linear-gradient(80deg, var(--color-tertiary-alpha-50) 0%, var(--color-secondary-alpha-50) 100%);
+		box-shadow: 1rem 1rem 0 var(--color-tertiary-alpha-10);
+		@include breakpoint(tablet-landscape) {
+				padding: 8rem;
+				border-radius: var( --radius-m);
+				box-shadow: 2rem 2rem 0 var(--color-tertiary-alpha-10);
+			}
+		padding: 4rem;
+		gap: 4rem;
+		will-change: background-image;
+		transition: background-image 0.8s ease-out;
+		@include breakpoint(tablet-landscape) {
+			flex-direction: row;
+			padding: 8rem;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	.splash-logo {
+		width: auto;
+		font-size: 1rem;
+		img,svg {
+			width: 60vw;
+			height: auto;
+			max-width: 40rem;
+		}
+	}
+	.splash-content {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 100%;
+		margin-top: auto;
+		align-items: flex-start;
+		@include breakpoint(tablet-landscape) {
+			width: auto;
+			margin-top: unset;
+			gap: 4rem; 
+		}	
+	}
+	.splash-cta {
+		@include cta-outline;
+		font-size: 2.4em;
+	}
+		
+}

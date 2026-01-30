@@ -1,0 +1,30 @@
+@use '../helpers' as *;
+
+
+.sitemain,
+.is-root-container {
+	.is-layout-flex {
+		&.wp-block-buttons {
+			gap: 1.6rem;
+			padding-top: 2rem;
+		}
+	}
+}
+
+.wp-block-button {
+	&:not(.is-style-outline, .is-style-arrowed) {
+		.wp-block-button__link {
+			@include cta-full;
+		}
+	}
+	&.is-style-outline {
+		.wp-block-button__link {
+			@include cta-outline;
+		}
+	}
+	&.is-style-arrowed {
+		.wp-block-button__link {
+			@extend %cta-arrowed;
+		}
+	}
+}

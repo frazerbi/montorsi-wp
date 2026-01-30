@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+// Stili per frontend
+.sitemain,
+.is-root-container {
+    .professionals-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        @include breakpoint(tablet-portrait) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6rem;
+        }
+        @include breakpoint(tablet-landscape) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8rem;
+        }
+    }
+    // Stili per l'editor
+    .professionals-grid-editor {
+        .professionals-grid {
+            display: block;
+            .block-editor-block-list__layout {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 2rem;
+                border: 2px dashed #ccc;
+                border-radius: 4px;
+                background-color: #fafafa;
+        
+                @include breakpoint(tablet-portrait) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 4rem;
+                }
+        
+                @include breakpoint(tablet-landscape) {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 5rem;
+                }
+            }
+        }
+        .wp-block-ficus-professional:has(.components-placeholder) {
+            grid-column: 1 / -1;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@use '../helpers' as *;
+
+.sitefooter {
+	z-index: 1;
+	@extend %font-primary-xs;
+	margin-top: 6rem;
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		padding: 1rem;
+		@include breakpoint(tablet-landscape) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			max-width: var(--max-width);
+			margin-left: auto;
+			margin-right: auto;
+			padding: 4rem;
+			gap: 6rem;
+
+		}
+	}
+	.logo {
+		img, svg {
+			max-width: 20rem;
+		}
+	}
+	.widgetarea {
+		.footer-widget {
+			@extend %font-primary-s;
+			h3 {
+				@extend %font-primary-m;
+				font-weight: bold;
+			}
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li {
+					a {
+						@extend %font-primary-xs;
+						text-transform: uppercase;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		&--primary {
+			@include breakpoint(tablet-landscape) {
+				.wp-block-image {
+					max-width: 20rem;
+				}
+			}
+		}
+		&--secondary {
+			display: flex;
+			flex-direction: column;
+			gap: 4rem;
+			@include breakpoint(tablet-landscape) {
+				margin-left: auto;
+				flex-direction: row;
+			}
+
+			
+		}
+		&--credits {
+			border-top: 1px solid currentColor;
+			padding-top: 4rem;
+			width: 100%;
+			flex-basis: 100%;
+		}
+	}
+}

@@ -1,13 +1,13 @@
 /* PALETTE */
 /* dove possibile riprendiamo i colori settati come CSS vars in theme.json per non duplicare valori */
 :root {
-  --color-primary: var(--wp--preset--color--delft-blue);
-  --color-secondary: var(--wp--preset--color--blue-gray);
-  --color-tertiary: var(--wp--preset--color--moonstone);
+  --color-primary: var(--wp--preset--color--dark-teal);
+  --color-secondary: var(--wp--preset--color--azure-mist);
+  --color-tertiary: var(--wp--preset--color--tropical-teal);
   --color-text: var(--wp--preset--color--black);
   --color-text-inverted: var(--wp--preset--color--white);
   --color-default-bg: var(--wp--preset--color--white);
-  --color-secondary-bg: var(--wp--preset--color--white-smoke);
+  --color-secondary-bg: var(--wp--preset--color--azure-mist);
   // definizione RGBA utile per i gradient
   --color-primary-alpha-50: rgba(36, 55, 96, 0.5);     // #243760
   --color-secondary-alpha-50: rgba(108, 157, 217, 0.5);  // #6C9DD9

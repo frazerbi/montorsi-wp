@@ -190,8 +190,8 @@ class ViteIntegration {
         );
 
         self::enqueueEntry('editor', 'editor-scripts', ['wp-blocks']);
-        self::enqueueEntry('professionalBlock', 'professional-block', ['wp-blocks', 'wp-element', 'wp-components']);
-        self::enqueueEntry('professionalsGridBlock', 'professionals-grid-block', ['wp-blocks', 'wp-element', 'wp-components']);
+        // self::enqueueEntry('professionalBlock', 'professional-block', ['wp-blocks', 'wp-element', 'wp-components']);
+        // self::enqueueEntry('professionalsGridBlock', 'professionals-grid-block', ['wp-blocks', 'wp-element', 'wp-components']);
     }
 }
 

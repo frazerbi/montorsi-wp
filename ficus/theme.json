@@ -19,36 +19,31 @@
 					"color": "#FFFFFF"
 				},
 				{
-					"name": "White smoke",
-					"slug": "white-smoke",
-					"color": "#F2F2F2"
+					"name": "Azure Mist",
+					"slug": "azure-mist",
+					"color": "#EFF9FA"
 				},
 				{
-					"name": "Gray medium",
-					"slug": "gray-medium",
-					"color": "#AAAAAA"
+					"name": "Dark Teal",
+					"slug": "dark-teal",
+					"color": "#00586e"
 				},
 				{
-					"name": "Delft Blue",
-					"slug": "delft-blue",
-					"color": "#243760"
+					"name": "Pearl Aqua",
+					"slug": "pearl-aqua",
+					"color": "#78CFD2"
 				},
 				{
-					"name": "Blue Gray",
-					"slug": "blue-gray",
-					"color": "#6C9DD9"
-				},
-				{
-					"name": "Moonstone",
-					"slug": "moonstone",
-					"color": "#53C2D7"
+					"name": "Tropical Teal",
+					"slug": "tropical-teal",
+					"color": "#00B0B9"
 				}
 			],
 			"gradients": [
 				{
 					"name": "Brand Gradient",
 					"slug": "brand-gradient",
-					"gradient": "linear-gradient(135deg, #243760 0%, #6C9DD9 100%)"
+					"gradient": "linear-gradient(135deg, #EFF9FA 0%, #EFF9FA 100%)"
 				}
 			]
 		},

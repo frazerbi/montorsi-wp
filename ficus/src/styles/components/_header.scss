@@ -13,7 +13,8 @@
 	flex-direction: row;
     flex-shrink: 0;
 	height: var(--header-height);
-	background-color: var(--color-default-bg);
+	background-color: var(--color-primary);
+    color: var(--color-text-inverted);
 	@include breakpoint(tablet-landscape) {
 		height: var(--header-height-desktop);
 		transition: all 0.3s ease;
@@ -54,7 +55,7 @@
 		width: 4.8rem;
 		height: 4.8rem;
 		@extend %cta-reset;
-		color: var(--color-primary);
+		color: inherit;
 		transition: transform 0.3s ease;
 		&:focus {
 			outline: none;

@@ -13,8 +13,18 @@ docker-compose up -d
 ```
 4. Visita `http://localhost:8000` per completare l'installazione di WordPress.
 5. Installa composer e le sue dipendenze: da ficus: `docker run --rm -v $(pwd):/app composer:latest install`
-5. Vai alla cartella del tema e lancia quanto serve per farlo partire: composer + vite. Il tema custom si trova in `ficus/`.
-
+6. Dalla cartella del tema indica la versione di node che ti interessa:
+```bash
+nvm use
+```
+8. Sempre dalla cartella del tema lancia l'installazione dei pacchetti necessari al frontend
+```bash
+npm install
+```
+9. Sempre dalla cartella del tema lancia vite per farlo partire runtime (vedi riferimenti in package json)
+```bash
+npm run dev
+```
 ## Struttura
 
 - `docker-compose.yml`: setup base di WP + MySQL

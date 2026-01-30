@@ -181,14 +181,6 @@ class ViteIntegration {
     public static function enqueueEditorAssets() {
         error_log('🎯 ViteIntegration: enqueueEditorAssets chiamato');
 
-        // Carica i font di Google nell'editor
-        wp_enqueue_style(
-            'google-fonts',
-            'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
-            [],
-            null
-        );
-
         self::enqueueEntry('editor', 'editor-scripts', ['wp-blocks']);
         // self::enqueueEntry('professionalBlock', 'professional-block', ['wp-blocks', 'wp-element', 'wp-components']);
         // self::enqueueEntry('professionalsGridBlock', 'professionals-grid-block', ['wp-blocks', 'wp-element', 'wp-components']);

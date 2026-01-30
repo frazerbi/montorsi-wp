@@ -94,7 +94,7 @@
 				}
 			],
 			"fontFamilies": [
-				{ "name": "Primary", "slug": "primary", "fontFamily": "Barlow" },
+				{ "name": "Primary", "slug": "primary", "fontFamily": "Manrope" },
 				{ "name": "Secondary", "slug": "secondary", "fontFamily": "DM Sans" }
 			]
 		},

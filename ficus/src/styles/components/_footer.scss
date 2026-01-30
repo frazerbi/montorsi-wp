@@ -2,6 +2,8 @@
 
 .sitefooter {
 	z-index: 1;
+	background-color: var(--color-primary);
+	color: var(--color-text-inverted);
 	@extend %font-primary-xs;
 	margin-top: 6rem;
 	&-inner {

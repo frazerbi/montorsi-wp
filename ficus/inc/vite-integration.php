@@ -184,7 +184,7 @@ class ViteIntegration {
         // Carica i font di Google nell'editor
         wp_enqueue_style(
             'google-fonts',
-            'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
             [],
             null
         );

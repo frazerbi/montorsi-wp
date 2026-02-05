@@ -7,4 +7,52 @@ body.home {
 			gap: 8rem;
 		}
 	}
+	// HERO SECTION - Full width con contenuto centrato
+	.hero-section-home {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		padding: 0 !important;
+
+		// Il blocco Cover deve essere full-width e più alto
+		.wp-block-cover {
+			border-radius: 0 !important;
+			min-height: 60vh;
+			display: flex;
+			align-items: center;
+
+			@include breakpoint(tablet-landscape) {
+				min-height: 70vh;
+			}
+		}
+
+		// Contenuto interno limitato alla contentSize
+		.wp-block-cover__inner-container {
+			max-width: var(--max-width);
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			padding-right: 20%;
+
+			// Spaziatura tra gli elementi
+			h1 {
+				margin-bottom: 2rem;
+				@include breakpoint(tablet-landscape) {
+					margin-bottom: 2.4rem;
+				}
+			}
+
+			p {
+				margin-bottom: 3rem;
+
+				@include breakpoint(tablet-landscape) {
+					margin-bottom: 4rem;
+
+				}
+			}
+		}
+	}
 }

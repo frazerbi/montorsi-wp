@@ -27,7 +27,6 @@
     @extend %font-primary-std;
     font-weight: bold;
     padding: 0.4rem 2.4rem;
-    min-height: 5.4rem;
     transition: all 0.3s ease;
     border-radius: 5rem;
     @include breakpoint(tablet-landscape) {
@@ -36,7 +35,7 @@
     }
 }
 
-@mixin cta-full($bg-color: var(--color-tertiary), $bg-color-hover: var(--color-secondary), $color: var(--color-primary)) {
+@mixin cta-full($bg-color: var(--color-primary), $bg-color-hover: var(--color-tertiary), $color: var(--color-secondary)) {
     @extend %cta-main;
     color: $color;
     background-color: $bg-color;

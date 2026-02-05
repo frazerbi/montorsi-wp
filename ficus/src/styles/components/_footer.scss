@@ -49,6 +49,9 @@
 					}
 				}
 			}
+			a {
+				color: inherit;
+			}
 		}
 		&--primary {
 			@include breakpoint(tablet-landscape) {

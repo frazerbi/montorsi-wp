@@ -75,17 +75,17 @@
 				{
 					"name": "Medium",
 					"slug": "medium",
-					"size": "2.5rem"
+					"size": "4rem"
 				},
 				{
 					"name": "Large",
 					"slug": "large",
-					"size": "3.2rem"
+					"size": "4.8rem"
 				},
 				{
 					"name": "Extra Large",
 					"slug": "extra-large",
-					"size": "4rem"
+					"size": "7rem"
 				}
 			],
 			"fontFamilies": [

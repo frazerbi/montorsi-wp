@@ -25,6 +25,26 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Come fermare il progetto
+
+Quando hai finito di lavorare, è importante chiudere correttamente i container:
+
+```bash
+docker-compose down
+```
+
+Questo comando ferma e rimuove i container, ma mantiene i dati del database nella cartella `db-data/`.
+
+**Altri comandi utili:**
+- Per fermare i container senza rimuoverli: `docker-compose stop`
+- Per riavviare i container fermati: `docker-compose start`
+- Per vedere i container in esecuzione: `docker ps`
+
+**Per chiudere Docker Desktop completamente (macOS):**
+- Clicca sull'icona Docker nella barra dei menu e seleziona "Quit Docker Desktop"
+- Oppure da terminale: `osascript -e 'quit app "Docker"'`
+
 ## Struttura
 
 - `docker-compose.yml`: setup base di WP + MySQL

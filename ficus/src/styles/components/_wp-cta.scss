@@ -12,7 +12,7 @@
 }
 
 .wp-block-button {
-	&:not(.is-style-outline, .is-style-arrowed) {
+	&:not(.is-style-outline, .is-style-arrowed, .is-style-white) {
 		.wp-block-button__link {
 			@include cta-full;
 		}
@@ -25,6 +25,11 @@
 	&.is-style-arrowed {
 		.wp-block-button__link {
 			@extend %cta-arrowed;
+		}
+	}
+	&.is-style-white {
+		.wp-block-button__link {
+			@include cta-white;
 		}
 	}
 }

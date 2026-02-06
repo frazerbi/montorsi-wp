@@ -1,8 +1,8 @@
 @use '../helpers' as *;
 
 :root {
-	--header-height: 6rem;
-	--header-height-desktop: 9.6rem;
+	--header-height: 4rem;
+	--header-height-desktop: 6.6rem;
 }
 
 .siteheader {
@@ -38,9 +38,9 @@
 	&-logo {
 		position: relative;
 		z-index: 2;
-		height: 3.6rem;
+		height: 2.8rem;
 		@include breakpoint(tablet-landscape) {
-			height: 4.8rem;
+			height: 3.6rem;
 		}
 		img, svg {
 			height: 100%;

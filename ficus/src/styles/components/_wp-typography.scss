@@ -44,6 +44,15 @@
 		@extend %font-primary-std;
 		font-weight: bold;
 	}
+	h5 {
+		@extend %font-base;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	h6 {
+		@extend %font-primary-s;
+		font-weight: bold;
+	}
 	p {
 		@extend %font-primary-std;
 	}

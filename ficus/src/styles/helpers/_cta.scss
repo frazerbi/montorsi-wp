@@ -26,12 +26,11 @@
     text-align: center;
     @extend %font-primary-std;
     font-weight: bold;
-    padding: 0.4rem 2.4rem;
+    padding: 1.2rem 2.4rem;
     transition: all 0.3s ease;
     border-radius: 5rem;
     @include breakpoint(tablet-landscape) {
-        padding: 0.4rem 3.6rem;
-        min-height: 6.4rem;
+        padding: 1.2rem 3.6rem;
     }
 }
 

@@ -1,7 +1,7 @@
 @use 'breakpoints' as *;
 
 :root {
-    --font-size-root: 10px;
+    --font-size-root: 16px;
     --font-family-primary: var(--wp--preset--font-family--primary);
     --font-family-secondary: var(--wp--preset--font-family--secondary);
     //
@@ -51,7 +51,6 @@ h6 {
     font-size: var(--wp--preset--font-size--extra-small);
     
 }
-
 %font-primary-s {
     @extend %font-base;
     font-size: var(--wp--preset--font-size--small);
@@ -63,20 +62,15 @@ h6 {
     letter-spacing: 0.1em;
     
 }
-
 %font-primary-std {
     @extend %font-base;
     font-size: var(--wp--preset--font-size--normal);
 }
-
-
 %font-primary-m {
     @extend %font-base;
     line-height: var(--font-lineheight-tight);
     font-size: var(--wp--preset--font-size--medium);
 }
-
-
 %font-primary-l {
     @extend %font-base;
     line-height: var(--font-lineheight-tight);

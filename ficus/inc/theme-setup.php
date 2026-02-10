@@ -17,6 +17,7 @@ class ThemeSetup {
 		add_action('widgets_init', [self::class, 'setupWidgets']);
         
         add_filter('wp_nav_menu_args', [self::class, 'modify_nav_menu_args']);
+        add_action('wp_enqueue_scripts', [self::class, 'enqueueStyles']);
     }
 
     /**
@@ -106,6 +107,13 @@ class ThemeSetup {
 			'after_title'   => '</h3>',
 		]);
 		}
+
+    /**
+     * Carica il foglio di stile principale del tema
+     */
+    public static function enqueueStyles() {
+        wp_enqueue_style('ficus-style', get_stylesheet_uri());
+    }
 
     /**
      * Pulizia dell'header

@@ -93,6 +93,20 @@ async function initializeComponents(): Promise<void> {
     wp_carousel_vertical.init();
     wp_carousel_vertical_nodots.init();
     
+    // Reviews carousel
+    const reviews_carousel = new CarouselManager('.reviews-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: false, 
+        breakpoints: {
+            640: { slidesPerView: 1.5, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 2.5, spaceBetween: 30 },
+            1280: { slidesPerView: 3, spaceBetween: 40 }
+        }
+    });
+    reviews_carousel.init();
+
     AppState.initialized = true;
     console.log('✅ App inizializzata');
   } catch (error) {

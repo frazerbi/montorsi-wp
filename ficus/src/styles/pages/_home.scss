@@ -3,8 +3,10 @@
 body.home {
 	.sitemain,
 	.is-root-container {
+		padding-inline: 1rem;
 		@include breakpoint(tablet-landscape) {
 			gap: 6rem;
+			padding-inline: 1rem;
 		}
 	}
 	// HERO SECTION - Full width con contenuto centrato

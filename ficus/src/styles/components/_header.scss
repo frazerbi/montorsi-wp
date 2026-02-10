@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 :root {
-	--header-height: 4rem;
+	--header-height: 6rem;
 	--header-height-desktop: 6.6rem;
 }
 
@@ -26,13 +26,11 @@
 		align-items: center;
 		width: 100%;
 		max-width: var(--max-width);
-		padding: 1rem;
 		margin-left: auto;
 		margin-right: auto;
 		gap: 2.4rem;
 		@include breakpoint(tablet-landscape) {
-			padding-left: 3rem;
-			padding-right: 3rem;
+			padding-inline: 1rem;
 		}
 	}
 	&-logo {
@@ -40,7 +38,7 @@
 		z-index: 2;
 		height: 2.8rem;
 		@include breakpoint(tablet-landscape) {
-			height: 3.6rem;
+			height: 3rem;
 		}
 		img, svg {
 			height: 100%;
@@ -296,25 +294,6 @@
                         > a {
                             position: relative;
                             font-weight: normal;
-                            &::after {
-                                content: '';
-                                position: absolute;
-                                width: 1.5em;
-                                height: 1.5em;
-                                background-color: var(--color-tertiary-alpha-50);
-                                top: 50%;
-                                transform: translateY(-50%);
-                                z-index: -1;
-                                left: -0.25em;
-                                transform-origin: center;
-                                transition: all 0.3s ease;
-                            }
-                            &:hover {
-                                &::after {
-                                    rotate: -15deg;
-                                    background-color: var(--color-secondary-alpha-50);
-                                }	
-                            }
                         }
                     }
                 }

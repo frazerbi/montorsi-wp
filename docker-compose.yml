@@ -25,8 +25,8 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_NAME: ${SITE_DB_NAME}
-      WORDPRESS_DB_USER: ${SITE_WP_USER}
-      WORDPRESS_DB_PASSWORD: ${SITE_WP_PASSWORD}
+      WORDPRESS_DB_USER: ${SITE_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${SITE_DB_PASSWORD}
       WORDPRESS_DEBUG: 'true'
     volumes:
       - ./wordpress:/var/www/html

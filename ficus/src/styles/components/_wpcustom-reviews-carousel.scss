@@ -1,0 +1,79 @@
+@use '../helpers' as *;
+
+// Editor
+.reviews-carousel-editor {
+    .reviews-carousel {
+        padding: 2rem;
+        background-color: #fafafa;
+        border: 2px dashed #ccc;
+        border-radius: 4px;
+
+        .block-editor-block-list__layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            @include breakpoint(tablet-portrait) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint(tablet-landscape) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    .wp-block-ficus-review:has(.components-placeholder) {
+        grid-column: 1 / -1;
+    }
+}
+
+// Frontend
+// Frontend
+.sitemain,
+.is-root-container {
+    .reviews-carousel {
+        padding-bottom: 6rem; // spazio per le frecce sotto
+
+        &.swiper {
+            .swiper-wrapper {
+                align-items: stretch;
+            }
+
+            .swiper-slide {
+                height: auto;
+                display: flex;
+
+                .reviewcard {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: auto;
+            bottom: 0;
+            width: 4rem;
+            height: 4rem;
+            color: var(--color-primary);
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--color-tertiary);
+            }
+        }
+
+        .swiper-button-prev {
+            left: auto;
+            right: 6rem;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+        &.swiper::before {
+            display: none;
+        }
+    }
+}

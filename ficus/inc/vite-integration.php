@@ -18,6 +18,8 @@ class ViteIntegration {
                 'editor' => 'src/scripts/editorCustomizer.ts',
                 'professionalBlock'=> 'blocks/professional/index.ts',
                 'professionalsGridBlock' => 'blocks/professionals-grid/index.ts',
+                'reviewBlock' => 'blocks/review/index.ts',
+                'reviewsCarouselBlock' => 'blocks/reviews-carousel/index.ts',
             ]
         ];
     }
@@ -184,6 +186,8 @@ class ViteIntegration {
         self::enqueueEntry('editor', 'editor-scripts', ['wp-blocks']);
         // self::enqueueEntry('professionalBlock', 'professional-block', ['wp-blocks', 'wp-element', 'wp-components']);
         // self::enqueueEntry('professionalsGridBlock', 'professionals-grid-block', ['wp-blocks', 'wp-element', 'wp-components']);
+        self::enqueueEntry('reviewBlock', 'review-block', ['wp-blocks', 'wp-element', 'wp-components']);
+        self::enqueueEntry('reviewsCarouselBlock', 'reviews-carousel-block', ['wp-blocks', 'wp-element', 'wp-components']);
     }
 }
 

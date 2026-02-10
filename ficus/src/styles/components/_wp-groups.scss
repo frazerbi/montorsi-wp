@@ -3,8 +3,6 @@
 .sitemain,
 .is-root-container {
 	.wp-block-group {
-		display: flex;
-		flex-direction: column;
 		gap: 1.6rem;
 		&.has-background {
 			gap: 2.4rem;

@@ -1,0 +1,61 @@
+@use '../helpers' as *;
+
+// ACCORDION ITEM
+.wp-block-accordion-item {
+	--accordion-padding: 1.2rem 1.6rem;
+
+	@include breakpoint(tablet-landscape) {
+		--accordion-padding: 1.6rem 2.4rem;
+	}
+
+	border: 1px solid var(--color-primary);
+	border-radius: var(--radius-s);
+	margin-bottom: 1.2rem;
+
+	&:hover {
+		border-color: var(--color-tertiary);
+	}
+}
+
+// ACCORDION HEADING / TOGGLE
+.wp-block-accordion-heading {
+	color: var(--color-primary);
+
+	&__toggle {
+		padding: var(--accordion-padding) !important;
+		background-color: transparent;
+
+		&:hover {
+			.wp-block-accordion-heading__toggle-title,
+			.wp-block-accordion-heading__toggle-icon {
+				color: var(--color-tertiary);
+				text-decoration: none;
+			}
+		}
+
+		&-title {
+			font-weight: 600;
+			transition: color 0.25s ease;
+		}
+
+		&-icon {
+			line-height: 1;
+			font-size: xxx-large;
+			font-weight: 400;
+		}
+	}
+}
+
+// ACCORDION CONTENT
+.wp-block-accordion-panel {
+	padding: var(--accordion-padding);
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+	.wp-block-group {
+		column-gap: 1.2rem;
+		row-gap: 4rem;
+	}
+}

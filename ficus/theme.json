@@ -122,7 +122,16 @@
 			"margin": true,
 			"padding": true,
 			"blockGap": null,
-			"unit": "rem"
+			"units": ["rem"],
+			"spacingSizes": [
+				{ "name": "2X-Small", "slug": "20", "size": "0.8rem" },
+				{ "name": "X-Small",  "slug": "30", "size": "1.2rem" },
+				{ "name": "Small",    "slug": "40", "size": "1.6rem" },
+				{ "name": "Medium",   "slug": "50", "size": "2.4rem" },
+				{ "name": "Large",    "slug": "60", "size": "3.6rem" },
+				{ "name": "X-Large",  "slug": "70", "size": "5.6rem" },
+				{ "name": "2X-Large", "slug": "80", "size": "8rem" }
+			]
 		},
 		"layout": {
 			"contentSize": "144rem"

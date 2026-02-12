@@ -62,6 +62,10 @@
 			width: 100%;
 		}
 	}
+	.wp-block-media-text__content {
+		padding-inline: 0 var(--wp--preset--spacing--60);
+	}
+
 	// HERO SECTION per blocchi Cover
 	.wp-block-cover {
 		&.is-style-hero-section {

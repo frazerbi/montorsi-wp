@@ -31,9 +31,12 @@ body {
 	@include breakpoint(tablet-landscape) {
 		gap: 6rem;
 	}
+}
 
-	// I gruppi di primo livello sono full-width (per sfondi colorati)
-	// ma il loro contenuto interno è limitato a max-width e centrato
+// I gruppi di primo livello sono full-width (per sfondi colorati)
+// ma il loro contenuto interno è limitato a max-width e centrato
+.sitemain,
+.is-root-container {
 	> * > * {
 		width: 100%;
 		margin-left: auto;
@@ -43,4 +46,13 @@ body {
 		}
 	}
 
+	// WordPress esclude .alignfull dal max-width con :not(.alignfull)
+	// e applica max-width: none — questa regola lo sovrascrive
+	> * > .alignfull {
+		@include breakpoint(tablet-landscape) {
+			max-width: var(--max-width);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }

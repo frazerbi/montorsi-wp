@@ -28,7 +28,6 @@ footer .sitefooter-inner {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem 0;
-    margin: 0;
 }
 footer .sitefooter-inner .widgetarea.widgetarea.widgetarea--primary {
     width: 40%;

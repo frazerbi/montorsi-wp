@@ -7,19 +7,40 @@ body {
 }
 
 .sitemain,
+.is-root-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 3.2rem;
+	@include breakpoint(tablet-landscape) {
+		gap: 6rem;
+	}
+	& + * {
+		margin-top: auto;
+	}
+}
+
+// Il root container è full-width (niente max-width)
 .is-root-container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	gap: 3.2rem;
-	margin-left: auto;
-	margin-right: auto;
 	@include breakpoint(tablet-landscape) {
 		gap: 6rem;
-		max-width: var(--max-width);
 	}
-	& + * {
-		margin-top: auto;
+
+	// I gruppi di primo livello sono full-width (per sfondi colorati)
+	// ma il loro contenuto interno è limitato a max-width e centrato
+	> * > * {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		@include breakpoint(tablet-landscape) {
+			max-width: var(--max-width);
+		}
 	}
+
 }

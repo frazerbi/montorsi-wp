@@ -12,24 +12,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	gap: 3.2rem;
+	gap: 6rem;
 	@include breakpoint(tablet-landscape) {
-		gap: 6rem;
+		gap: 10rem;
 	}
 	& + * {
 		margin-top: auto;
-	}
-}
-
-// Il root container è full-width (niente max-width)
-.is-root-container {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	gap: 3.2rem;
-	@include breakpoint(tablet-landscape) {
-		gap: 6rem;
 	}
 }
 

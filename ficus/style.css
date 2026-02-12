@@ -17,32 +17,3 @@ Text Domain: ficus
     height: 2.5em;  /* o il valore che preferisci */
     width: 2.5em;
 }
-
-/* custom footer  */
-footer h3 {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-footer .sitefooter-inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem 0;
-}
-footer .sitefooter-inner .widgetarea.widgetarea.widgetarea--primary {
-    width: 40%;
-}
-footer .sitefooter-inner .widgetarea.widgetarea.widgetarea--secondary {
-    width: 10%;
-    gap: 0rem;
-    flex-wrap: wrap;
-    min-width: 10rem;
-}
-footer .sitefooter-inner .widgetarea.widgetarea.widgetarea--secondary .footer-widget {
-    width: 100%;
-}
-footer .sitefooter-inner .widgetarea.widgetarea--credits {
-    padding-top: 1rem;
-    display: flex;
-    column-gap: 1rem;
-}

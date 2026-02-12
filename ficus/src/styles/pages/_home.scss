@@ -4,6 +4,15 @@ body.home {
 	.sitemain,
 	.is-root-container {
 		gap: 6rem;
+		> * > * {
+			padding-inline: 1rem;
+			@include breakpoint(tablet-landscape) {
+				padding-inline: 2rem;
+			}
+			@include breakpoint(desktop) {
+				padding-inline: 1rem;
+			}
+		}
 		@include breakpoint(tablet-landscape) {
 			gap: 10rem;
 		}

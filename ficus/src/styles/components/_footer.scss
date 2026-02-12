@@ -8,18 +8,20 @@
 	margin-top: 6rem;
 	&-inner {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		gap: 4rem;
-		padding: 1rem;
+		padding-top: 6rem;
+		padding-bottom: 2rem;
+		padding-inline: 2rem;
 		@include breakpoint(tablet-landscape) {
-			flex-direction: row;
-			flex-wrap: wrap;
 			max-width: var(--max-width);
 			margin-left: auto;
 			margin-right: auto;
-			padding: 4rem;
-			gap: 6rem;
-
+		}
+		@include breakpoint(desktop) {
+			padding-inline: 1rem;
 		}
 	}
 	.logo {
@@ -33,6 +35,7 @@
 			h3 {
 				@extend %font-primary-m;
 				font-weight: bold;
+				text-transform: uppercase;
 			}
 			ul {
 				list-style: none;
@@ -54,7 +57,9 @@
 			}
 		}
 		&--primary {
+			width: 40%;
 			@include breakpoint(tablet-landscape) {
+				width: 40%;
 				.wp-block-image {
 					max-width: 20rem;
 				}
@@ -63,19 +68,25 @@
 		&--secondary {
 			display: flex;
 			flex-direction: column;
-			gap: 4rem;
-			@include breakpoint(tablet-landscape) {
-				margin-left: auto;
-				flex-direction: row;
+			gap: 1rem;
+			min-width: 16rem;
+			.footer-widget {
+				@include breakpoint(tablet-landscape) {
+					width: 100%;
+				}
 			}
-
-			
 		}
 		&--credits {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
 			border-top: 1px solid currentColor;
 			padding-top: 4rem;
 			width: 100%;
 			flex-basis: 100%;
+			padding-top: 1rem;
+			column-gap: 1rem;
+		    
 		}
 	}
 }

@@ -3,24 +3,13 @@
 body.home {
 	.sitemain,
 	.is-root-container {
-		padding-inline: 1rem;
+		gap: 6rem;
 		@include breakpoint(tablet-landscape) {
-			gap: 6rem;
-			padding-inline: 1rem;
+			gap: 10rem;
 		}
-	}
-	// HERO SECTION - Full width con contenuto centrato
-	.hero-section-home {
-		width: 100vw;
-		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
-		padding: 0 !important;
 
-		// Il blocco Cover deve essere full-width e più alto
-		.wp-block-cover {
+		// Hero: solo il primo cover è full-width e più alto
+		.wp-block-group > .wp-block-cover:first-child {
 			border-radius: 0 !important;
 			min-height: 60vh;
 			display: flex;
@@ -37,7 +26,6 @@ body.home {
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
-			padding-right: 20%;
 
 			// Spaziatura tra gli elementi
 			h1 {

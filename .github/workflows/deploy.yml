@@ -13,6 +13,18 @@ jobs:
     - name: 🚚 Get Latest Code
       uses: actions/checkout@v3
     
+      # 👇 AGGIUNGI QUESTI STEP PER COMPILARE
+    - name: 📦 Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # o la versione che usi
+    
+    - name: 📥 Install Dependencies
+      run: npm ci
+    
+    - name: 🔨 Build Project
+      run: npm run build  # o il comando di build che usi
+
     - name: 📂 Sync Files
       uses: SamKirkland/web-deploy@v1
       with:

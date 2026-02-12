@@ -20,10 +20,10 @@ body.home {
 		// Hero: solo il primo cover è full-width e più alto
 		.wp-block-group > .wp-block-cover:first-child {
 			border-radius: 0 !important;
-			min-height: 60vh;
+			min-height: 85vh;
 			display: flex;
 			align-items: center;
-
+			padding-block: 4rem;
 			@include breakpoint(tablet-landscape) {
 				min-height: 70vh;
 			}

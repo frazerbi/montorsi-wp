@@ -1,4 +1,4 @@
-name: Publish to Siteground Hosting francescoz116.sg-host.com
+name: Publish to Siteground Hosting francescoz115.sg-host.com
 
 on:
   push:

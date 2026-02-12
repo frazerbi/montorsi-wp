@@ -90,14 +90,14 @@ fieldset {
 }
   
 :root:root {
-    @include breakpoint(tablet-portrait, max) {
-        --wp--preset--spacing--60: 0;
-        --wp--preset--spacing--70: 0;
-        --wp--preset--spacing--80: 0;
-    }
     @include breakpoint(tablet-landscape, max) {
         --wp--preset--spacing--60: 1rem;
         --wp--preset--spacing--70: 1.5rem;
         --wp--preset--spacing--80: 2rem;
+    }
+    @include breakpoint(tablet-portrait, max) {
+        --wp--preset--spacing--60: 0;
+        --wp--preset--spacing--70: 0;
+        --wp--preset--spacing--80: 0;
     }
 }

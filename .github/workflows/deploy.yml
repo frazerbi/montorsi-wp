@@ -18,6 +18,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'  # o la versione che usi
+        cache: 'npm'
+        cache-dependency-path: './ficus/package-lock.json'
     
     - name: 📥 Install Dependencies
       working-directory: ./ficus 

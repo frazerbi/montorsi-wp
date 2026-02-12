@@ -10,6 +10,25 @@
 				gap: 3.6rem;
 			}
 		}
+		&.is-layout-grid {
+			.wp-block-column {
+				width: 100%;
+				@include breakpoint(tablet-landscape) {
+					width: auto;
+				}
+			}
+			figure {
+					max-width: 10rem;
+					min-width: 8rem;
+				}
+			@include breakpoint(tablet-portrait, max) {
+				grid-template-columns: 1fr !important;
+				figure {
+					max-width: 10rem;
+					min-width: 8rem;
+				}
+			}
+		}
 		&.is-style-light_blue,
 		&.is-style-mid_blue,
 		&.is-style-outlined_gray {

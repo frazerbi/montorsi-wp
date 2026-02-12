@@ -45,6 +45,13 @@ h6 {
     }
 }
 
+h2 {
+    margin-bottom: var(--wp--preset--spacing--60) !important;
+    @include breakpoint(tablet-portrait, max) {
+        margin-bottom: 3rem !important;
+    }
+}
+
 %font-base {
     font-family: var(--font-family-primary);
     line-height: var(--font-lineheight-normal);

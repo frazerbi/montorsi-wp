@@ -1,0 +1,12 @@
+{
+  "apiVersion": 3,
+  "name": "ficus/professionals-grid",
+  "title": "Professionals Grid",
+  "category": "widgets",
+  "icon": "grid-view",
+  "description": "Griglia di professionisti.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  }
+}

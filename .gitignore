@@ -3,8 +3,7 @@
 /wordpress
 */node_modules
 */vendor
-*.lock
-*lock.*
+composer.lock  
 */cache
 */dist
 .env

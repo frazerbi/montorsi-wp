@@ -1,0 +1,37 @@
+{
+  "apiVersion": 3,
+  "name": "ficus/professional",
+  "title": "Professional",
+  "category": "widgets",
+  "icon": "admin-users",
+  "description": "Card professionista con avatar, nome, ruolo e CTA.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "avatar": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "url": "",
+        "alt": ""
+      }
+    },
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "role": {
+      "type": "string",
+      "default": ""
+    },
+    "ctaText": {
+      "type": "string",
+      "default": ""
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

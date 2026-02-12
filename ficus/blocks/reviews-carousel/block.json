@@ -1,0 +1,12 @@
+{
+  "apiVersion": 3,
+  "name": "ficus/reviews-carousel",
+  "title": "Reviews Carousel",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Carousel di recensioni. Contiene blocchi Review.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  }
+}

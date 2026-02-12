@@ -20,9 +20,11 @@ jobs:
         node-version: '20'  # o la versione che usi
     
     - name: 📥 Install Dependencies
+      working-directory: ./ficus 
       run: npm install
     
     - name: 🔨 Build Project
+      working-directory: ./ficus 
       run: npm run build
 
     - name: 📂 Sync Files

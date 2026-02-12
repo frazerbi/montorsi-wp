@@ -89,7 +89,7 @@ fieldset {
     border: 0;
 }
   
-:root {
+:root:root {
     @include breakpoint(tablet-portrait, max) {
         --wp--preset--spacing--60: 0.5rem;
         --wp--preset--spacing--70: 1rem;

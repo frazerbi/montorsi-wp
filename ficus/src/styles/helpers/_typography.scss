@@ -11,8 +11,9 @@
 }
 
 @include breakpoint(tablet-landscape) {
-  :root {
+  :root:root {
     // wp--preset--font-size default (mobile) definite in theme.json
+    // :root:root aumenta la specificità per vincere su WP global styles
     --wp--preset--font-size--medium: 2.6rem;
     --wp--preset--font-size--large: 3rem;
     --wp--preset--font-size--extra-large: 3.6rem;

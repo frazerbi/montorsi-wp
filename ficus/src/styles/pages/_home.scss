@@ -18,6 +18,14 @@ body.home {
 			@include breakpoint(tablet-landscape) {
 				min-height: 70vh;
 			}
+
+			> .wp-block-cover__inner-container {
+				padding-right: 0;
+
+				@include breakpoint(tablet-landscape) {
+					padding-right: 30%;
+				}
+			}
 		}
 
 		// Contenuto interno limitato alla contentSize

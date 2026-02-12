@@ -5,7 +5,8 @@ const { registerBlockType } = wp.blocks;
 
 import Edit from './edit';
 import Save from './save';
-import metadata from './block.json';
+import metadataRaw from './block.json?raw';
+const metadata = JSON.parse(metadataRaw);
 
 // Definisci i tipi per il metadata
 interface BlockMetadata {

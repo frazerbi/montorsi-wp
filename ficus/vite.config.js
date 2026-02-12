@@ -7,9 +7,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  json: {
-    stringify: false  // 👈 AGGIUNGI QUESTA RIGA
-  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

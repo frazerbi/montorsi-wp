@@ -160,6 +160,12 @@
             width: 100%;
             margin-top: 5rem;
             padding-inline: 1rem;
+            @include breakpoint(tablet-landscape) {
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
+                margin-top: 0;
+            }
             li {
                 list-style: none;
                 text-align: center;
@@ -169,6 +175,10 @@
                     color: inherit;
                     cursor: pointer;
                     @extend %font-primary-m;
+                    @include breakpoint(tablet-landscape) {
+                        font-size: var(--wp--preset--font-size--normal);
+                        line-height: var(--font-lineheight-normal);
+                    }
                 }
                 &[class*="current"]:not(.highlight) {
 					> a {

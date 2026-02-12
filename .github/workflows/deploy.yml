@@ -16,7 +16,7 @@ jobs:
     - name: 📂 Sync Files
       uses: SamKirkland/web-deploy@v1
       with:
-        target-server: ssh.francescoz116.sg-host.com
+        target-server: ssh.francescoz115.sg-host.com
         remote-user: u2035-q8fxzgjyzkfw
         private-ssh-key: ${{ secrets.SSH_KEY }}
         destination-path: /home/u2035-q8fxzgjyzkfw/www/francescoz115.sg-host.com/public_html/wp-content/themes/

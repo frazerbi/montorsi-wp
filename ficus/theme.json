@@ -60,32 +60,32 @@
 				{
 					"name": "Exra Small",
 					"slug": "extra-small",
-					"size": "0.85rem"
+					"size": "1.4rem"
 				},
 				{
 					"name": "Small",
 					"slug": "small",
-					"size": "1rem"
+					"size": "1.6rem"
 				},
 				{
 					"name": "Normal",
 					"slug": "normal",
-					"size": "1.2rem"
+					"size": "2rem"
 				},
 				{
 					"name": "Medium",
 					"slug": "medium",
-					"size": "2rem"
+					"size": "3rem"
 				},
 				{
 					"name": "Large",
 					"slug": "large",
-					"size": "3rem"
+					"size": "5rem"
 				},
 				{
 					"name": "Extra Large",
 					"slug": "extra-large",
-					"size": "4.2rem"
+					"size": "7rem"
 				}
 			],
 			"fontFamilies": [

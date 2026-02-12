@@ -42,16 +42,17 @@
 	}
 	h4 {
 		@extend %font-primary-std;
-		font-weight: bold;
+		font-weight: 600;			
+		text-transform: uppercase;
 	}
 	h5 {
-		@extend %font-base;
-		font-weight: 900;
+		@extend %font-primary-std;
+		font-weight: 600;
 		text-transform: uppercase;
 	}
 	h6 {
-		@extend %font-primary-s;
-		font-weight: bold;
+		@extend %font-primary-std;
+		font-weight: 600;
 	}
 	p {
 		@extend %font-primary-std;

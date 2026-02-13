@@ -91,13 +91,29 @@ fieldset {
   
 :root:root {
     @include breakpoint(tablet-landscape, max) {
+        --wp--preset--spacing--20: 0.4rem;
+        --wp--preset--spacing--30: 0.6rem;
+        --wp--preset--spacing--40: 0.8rem;
+        --wp--preset--spacing--50: 1rem;
+        --wp--preset--spacing--60: 1.5rem;
+        --wp--preset--spacing--70: 2rem;
+        --wp--preset--spacing--80: 3rem;
+    }
+    @include breakpoint(tablet-portrait, max) {
+        --wp--preset--spacing--20: 0.2rem;
+        --wp--preset--spacing--30: 0.4rem;
+        --wp--preset--spacing--40: 0.6rem;
+        --wp--preset--spacing--50: 0.8rem;
         --wp--preset--spacing--60: 1rem;
         --wp--preset--spacing--70: 1.5rem;
         --wp--preset--spacing--80: 2rem;
     }
-    @include breakpoint(tablet-portrait, max) {
-        --wp--preset--spacing--60: 0;
-        --wp--preset--spacing--70: 0;
-        --wp--preset--spacing--80: 0;
+}
+
+@include breakpoint(tablet-portrait, max) {
+    [style*="padding-right"][style*="--wp--preset--spacing"],
+    [style*="padding-left"][style*="--wp--preset--spacing"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }

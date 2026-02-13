@@ -90,13 +90,18 @@
 		}
 	}
 	.wp-block-media-text__content {
-		padding-inline: var(--wp--preset--spacing--60) 0;
+		padding-inline: var(--wp--preset--spacing--20) 0;
 		@include breakpoint(tablet-portrait, max) {
 			padding: 0;
 		}
 	}
+	> *:first-child .wp-block-media-text__content {
+		@include breakpoint(tablet-portrait, max) {
+			padding-block: var(--wp--preset--spacing--30);
+		}
+	}
 	.wp-block-media-text.has-media-on-the-right > .wp-block-media-text__content {
-		padding-inline: 0 var(--wp--preset--spacing--60);
+		padding-inline: 0 var(--wp--preset--spacing--20);
 		@include breakpoint(tablet-portrait, max) {
 			padding: 0;
 		}

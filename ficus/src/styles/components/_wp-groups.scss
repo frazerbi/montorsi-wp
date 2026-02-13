@@ -13,6 +13,9 @@
 		&.is-layout-grid {
 			.wp-block-column {
 				width: 100%;
+				@include breakpoint(tablet-portrait, max) {
+					padding-left: 0 !important;
+                }
 				@include breakpoint(tablet-landscape) {
 					width: auto;
 				}

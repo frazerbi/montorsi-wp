@@ -91,21 +91,21 @@ fieldset {
   
 :root:root {
     @include breakpoint(tablet-landscape, max) {
-        --wp--preset--spacing--20: 0.6rem;
-        --wp--preset--spacing--30: 0.8rem;
-        --wp--preset--spacing--40: 1.2rem;
-        --wp--preset--spacing--50: 1.6rem;
-        --wp--preset--spacing--60: 2.4rem;
-        --wp--preset--spacing--70: 3.6rem;
-        --wp--preset--spacing--80: 5.6rem;
+        --wp--preset--spacing--20: 2rem;
+        --wp--preset--spacing--30: 2.8rem;
+        --wp--preset--spacing--40: 3.2rem;
+        --wp--preset--spacing--50: 3.6rem;
+        --wp--preset--spacing--60: 4.4rem;
+        --wp--preset--spacing--70: 5.6rem;
+        --wp--preset--spacing--80: 8.6rem;
     }
     @include breakpoint(tablet-portrait, max) {
-        --wp--preset--spacing--20: 0.4rem;
-        --wp--preset--spacing--30: 0.6rem;
-        --wp--preset--spacing--40: 0.8rem;
-        --wp--preset--spacing--50: 1.2rem;
-        --wp--preset--spacing--60: 1.6rem;
-        --wp--preset--spacing--70: 2.4rem;
-        --wp--preset--spacing--80: 3.6rem;
+        --wp--preset--spacing--20: 1.6rem;
+        --wp--preset--spacing--30: 2rem;
+        --wp--preset--spacing--40: 2.8rem;
+        --wp--preset--spacing--50: 3.2rem;
+        --wp--preset--spacing--60: 3.6rem;
+        --wp--preset--spacing--70: 4.4rem;
+        --wp--preset--spacing--80: 5.6rem;
     }
 }

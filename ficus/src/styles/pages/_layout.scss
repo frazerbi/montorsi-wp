@@ -26,20 +26,13 @@ body {
 .sitemain,
 .is-root-container {
 	> * > * {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		@include breakpoint(tablet-portrait, max) {
+			padding-left: 1rem !important;
+			padding-right: 1rem !important;
+		}
 		width: 100%;
 		margin-left: auto !important;
 		margin-right: auto !important;
-		@include breakpoint(tablet-portrait) {
-			padding-left:  2.4rem;
-			padding-right:  2.4rem;
-		}
-		@include breakpoint(tablet-landscape) {
-			padding-left:  4rem;
-			padding-right:  4rem;
-			max-width: var(--max-width);
-		}
 	}
 
 	// WordPress esclude .alignfull dal max-width con :not(.alignfull)

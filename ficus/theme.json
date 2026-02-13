@@ -124,13 +124,13 @@
 			"blockGap": null,
 			"units": ["rem"],
 			"spacingSizes": [
-				{ "name": "2X-Small", "slug": "20", "size": "0.8rem" },
-				{ "name": "X-Small",  "slug": "30", "size": "1.2rem" },
-				{ "name": "Small",    "slug": "40", "size": "1.6rem" },
-				{ "name": "Medium",   "slug": "50", "size": "2.4rem" },
-				{ "name": "Large",    "slug": "60", "size": "3.6rem" },
-				{ "name": "X-Large",  "slug": "70", "size": "5.6rem" },
-				{ "name": "2X-Large", "slug": "80", "size": "8rem" }
+				{ "name": "2X-Small", "slug": "20", "size": "1.8rem" },
+				{ "name": "X-Small",  "slug": "30", "size": "2.2rem" },
+				{ "name": "Small",    "slug": "40", "size": "3.6rem" },
+				{ "name": "Medium",   "slug": "50", "size": "4.4rem" },
+				{ "name": "Large",    "slug": "60", "size": "5.6rem" },
+				{ "name": "X-Large",  "slug": "70", "size": "8.6rem" },
+				{ "name": "2X-Large", "slug": "80", "size": "12.6rem" }
 			]
 		},
 		"layout": {

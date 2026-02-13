@@ -16,6 +16,15 @@
 			flex-direction: column;
 			gap: 0.8rem;
 		}
+		
+		.form-row-half {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2.4rem;
+			@include breakpoint(tablet-portrait) {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
 
 		label {
 			@extend %font-primary-s;

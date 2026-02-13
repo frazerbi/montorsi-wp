@@ -26,16 +26,19 @@ body {
 .sitemain,
 .is-root-container {
 	> * > * {
-		padding-inline: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		width: 100%;
 		margin-left: auto !important;
 		margin-right: auto !important;
-		@include breakpoint(tablet-landscape) {
-			padding-inline: 2rem;
-			max-width: var(--max-width);
+		@include breakpoint(tablet-portrait) {
+			padding-left:  2.4rem;
+			padding-right:  2.4rem;
 		}
-		@include breakpoint(desktop) {
-			padding-inline: 1rem;
+		@include breakpoint(tablet-landscape) {
+			padding-left:  4rem;
+			padding-right:  4rem;
+			max-width: var(--max-width);
 		}
 	}
 

@@ -17,16 +17,6 @@
 /* CONTENT - stilizzazione per frontend ed editor view di WordPress */
 .sitemain,
 .is-root-container {
-	.has-background,
-	*.has-background {
-		padding: 1rem;
-		@include breakpoint(tablet-portrait) {
-			padding: 2.4rem;
-		}
-		@include breakpoint(tablet-landscape) {
-			padding: 4rem;
-		}
-	}
 	> * {
 		width: 100%;
 	}

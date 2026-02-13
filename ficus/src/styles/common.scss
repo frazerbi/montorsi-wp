@@ -91,21 +91,21 @@ fieldset {
   
 :root:root {
     @include breakpoint(tablet-landscape, max) {
+        --wp--preset--spacing--20: 0.6rem;
+        --wp--preset--spacing--30: 0.8rem;
+        --wp--preset--spacing--40: 1.2rem;
+        --wp--preset--spacing--50: 1.6rem;
+        --wp--preset--spacing--60: 2.4rem;
+        --wp--preset--spacing--70: 3.6rem;
+        --wp--preset--spacing--80: 5.6rem;
+    }
+    @include breakpoint(tablet-portrait, max) {
         --wp--preset--spacing--20: 0.4rem;
         --wp--preset--spacing--30: 0.6rem;
         --wp--preset--spacing--40: 0.8rem;
-        --wp--preset--spacing--50: 1rem;
-        --wp--preset--spacing--60: 1.5rem;
-        --wp--preset--spacing--70: 2rem;
-        --wp--preset--spacing--80: 3rem;
-    }
-    @include breakpoint(tablet-portrait, max) {
-        --wp--preset--spacing--20: 0.2rem;
-        --wp--preset--spacing--30: 0.4rem;
-        --wp--preset--spacing--40: 0.6rem;
-        --wp--preset--spacing--50: 0.8rem;
-        --wp--preset--spacing--60: 1rem;
-        --wp--preset--spacing--70: 1.5rem;
-        --wp--preset--spacing--80: 2rem;
+        --wp--preset--spacing--50: 1.2rem;
+        --wp--preset--spacing--60: 1.6rem;
+        --wp--preset--spacing--70: 2.4rem;
+        --wp--preset--spacing--80: 3.6rem;
     }
 }

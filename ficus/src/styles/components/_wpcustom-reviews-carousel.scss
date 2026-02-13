@@ -33,6 +33,7 @@
 .sitemain,
 .is-root-container {
     .reviews-carousel {
+
         padding-bottom: 6rem; // spazio per le frecce sotto
 
         &.swiper {
@@ -43,6 +44,12 @@
             .swiper-slide {
                 height: auto;
                 display: flex;
+
+                @include breakpoint(tablet-portrait, max) {
+                    max-width: 100%;
+                    overflow: auto;
+                    width: calc(100vw - 8rem) !important;
+                }
 
                 .reviewcard {
                     width: 100%;
@@ -66,11 +73,17 @@
 
         .swiper-button-prev {
             left: auto;
-            right: 4rem;
+            right: 5rem;
+            @include breakpoint(tablet-portrait) {
+                right: 4rem;
+            }
         }
 
         .swiper-button-next {
-            right: 0;
+            right: 1rem;
+            @include breakpoint(tablet-portrait) {
+                right: 0;
+            }
         }
         &.swiper::before {
             display: none;

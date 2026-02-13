@@ -81,6 +81,11 @@
 			width: 100%;
 		}
 	}
+	.wp-block-media-text.is-stacked-on-mobile {
+		@include breakpoint(tablet-portrait, max) {
+			gap: 1.6rem;
+		}
+	}
 	.wp-block-media-text__content {
 		padding-inline: var(--wp--preset--spacing--60) 0;
 		@include breakpoint(tablet-portrait, max) {

@@ -19,7 +19,10 @@
 .is-root-container {
 	.has-background,
 	*.has-background {
-		padding: 2.4rem;
+		padding: 1rem;
+		@include breakpoint(tablet-portrait) {
+			padding: 2.4rem;
+		}
 		@include breakpoint(tablet-landscape) {
 			padding: 4rem;
 		}

@@ -109,11 +109,3 @@ fieldset {
         --wp--preset--spacing--80: 2rem;
     }
 }
-
-@include breakpoint(tablet-portrait, max) {
-    [style*="padding-right"][style*="--wp--preset--spacing"],
-    [style*="padding-left"][style*="--wp--preset--spacing"] {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}

@@ -159,7 +159,7 @@
             gap: 3rem;
             width: 100%;
             @include breakpoint(tablet-portrait, max) {
-                gap: 2rem;
+                gap: 1.6rem;
             }
             li {
                 list-style: none;

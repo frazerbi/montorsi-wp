@@ -97,7 +97,7 @@
 	// Hero pagine interne: immagine a piena altezza viewport (solo primo blocco)
 	> *:first-child > .wp-block-media-text.alignfull {
 		> .wp-block-media-text__media {
-			height: 100vh;
+			height: 40vh;
 			img {
 				height: 100%;
 				object-fit: cover;

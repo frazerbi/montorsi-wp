@@ -156,11 +156,9 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 1rem;
             width: 100%;
-            margin-top: 5rem;
-            padding-inline: 1rem;
-            @include breakpoint(tablet-landscape) {
+            @include breakpoint(tablet-landscape-lg) {
                 flex-direction: row;
                 align-items: center;
                 gap: 2rem;
@@ -290,6 +288,9 @@
                 flex-direction: row;
                 align-items: center;
                 gap: 2rem;
+                @include breakpoint(desktop) {
+                    gap: 3rem;
+                }
                 > li {
                     position: static;
                     // Link diretti primo livello
@@ -298,8 +299,14 @@
                         padding: 0.5rem 1rem;
                     }
                 }
+                // Range stretto tablet-landscape–tablet-landscape-lg: font più piccolo
+                @include breakpoint(tablet-landscape-lg, max) {
+                    > li > a {
+                        font-size: var(--wp--preset--font-size--small);
+                    }
+                }
             }
-            
+
             // Mega menu desktop
             ul.menu {
                 li {

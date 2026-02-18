@@ -26,9 +26,13 @@ body {
 .sitemain,
 .is-root-container {
 	> * > * {
-		@include breakpoint(max-width, max) {
+		@include breakpoint(tablet-portrait, max) {
 			padding-left: var(--wp--preset--spacing--20) !important;
 			padding-right: var(--wp--preset--spacing--20) !important;
+		}
+		@include breakpoint(max-width, max) {
+			padding-left: var(--wp--preset--spacing--40) !important;
+			padding-right: var(--wp--preset--spacing--40) !important;
 		}
 		width: 100%;
 		margin-left: auto !important;

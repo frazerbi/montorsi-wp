@@ -29,6 +29,10 @@ jobs:
       working-directory: ./ficus 
       run: npm run build
 
+    - name: 🐘 Install PHP Dependencies
+      working-directory: ./ficus
+      run: composer install --no-dev --optimize-autoloader
+
     - name: 📂 Sync Files
       uses: SamKirkland/web-deploy@v1
       with:
@@ -37,4 +41,4 @@ jobs:
         private-ssh-key: ${{ secrets.SSH_KEY }}
         destination-path: /home/u2035-q8fxzgjyzkfw/www/francescoz115.sg-host.com/public_html/wp-content/themes/
         ssh-port: 18765
-        rsync-options: --archive --verbose --compress --update
+        rsync-options: --archive --verbose --compress --update --exclude='node_modules' --exclude='.git'

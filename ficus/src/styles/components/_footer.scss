@@ -67,9 +67,18 @@
 		}
 		&--secondary {
 			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-			min-width: 16rem;
+			flex-direction: row;
+			/* gap: 1rem; */
+			min-width: 40rem;
+			width: 50%;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.footer-widget:nth-child(1) {
+				width: 70%;
+			}
+			.footer-widget:nth-child(2) {
+				width: 30%;
+			}
 			.footer-widget {
 				@include breakpoint(tablet-landscape) {
 					width: 100%;

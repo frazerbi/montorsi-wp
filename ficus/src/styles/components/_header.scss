@@ -287,7 +287,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                gap: 3rem;
+                gap: 1rem;
                 @include breakpoint(desktop) {
                     gap: 2.2rem;
                 }
@@ -304,7 +304,7 @@
                 }
                 // Range stretto tablet-landscape–tablet-landscape-lg: font e gap ridotti
                 @include breakpoint(tablet-landscape-lg, max) {
-                    gap: 1rem;
+                    gap: 2rem;
                     > li > a {
                         font-size: var(--wp--preset--font-size--small);
                     }

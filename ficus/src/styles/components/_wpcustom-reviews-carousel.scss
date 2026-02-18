@@ -73,15 +73,16 @@
 
         .swiper-button-prev {
             left: auto;
-            right: 5rem;
-            @include breakpoint(tablet-portrait) {
+            right: calc( var(--wp--preset--spacing--20) + 4rem );
+            @include breakpoint(--bp-tablet-landscape-lg) {
                 right: 4rem;
             }
         }
 
         .swiper-button-next {
-            right: 1rem;
-            @include breakpoint(tablet-portrait) {
+            right: var(--wp--preset--spacing--20);
+            bottom: .9px;
+            @include breakpoint(--bp-tablet-landscape-lg) {
                 right: 0;
             }
         }

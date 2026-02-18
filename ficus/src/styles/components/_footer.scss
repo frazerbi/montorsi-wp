@@ -44,7 +44,7 @@
 				li {
 					a {
 						@extend %font-primary-xs;
-						text-transform: uppercase;
+						text-transform: inherit;
 						text-decoration: none;
 						&:hover {
 							text-decoration: underline;

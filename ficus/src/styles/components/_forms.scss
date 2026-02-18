@@ -70,6 +70,16 @@
 			}
 			input[type='checkbox'] {
 				@extend %visually-hidden;
+				// Sovrascrivi le proprietà che lo rendono non cliccabile
+				position: absolute !important;
+				width: 2rem !important;
+				height: 2rem !important;
+				clip: auto !important;
+				overflow: visible !important;
+				margin: 0 !important;
+				opacity: 0 !important;
+				cursor: pointer !important;
+				z-index: 1;
 			}
 		}
 

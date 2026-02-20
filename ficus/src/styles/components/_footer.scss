@@ -72,8 +72,12 @@
 			width: 100%;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			@include breakpoint(tablet-landscape) {
+				width: 50%;
+				min-width: 40rem;	
+			}
 			.footer-widget:nth-child(1) {
-				width: 70%;
+				width: 60%;
 				@include breakpoint(tablet-landscape) {
 					width: 50%;				
 				}
@@ -82,12 +86,6 @@
 				width: 30%;
 				@include breakpoint(tablet-landscape) {
 					width: 50%;				
-				}
-			}
-			.footer-widget {
-				@include breakpoint(tablet-landscape) {
-					width: 50%;
-					min-width: 40rem;					
 				}
 			}
 		}

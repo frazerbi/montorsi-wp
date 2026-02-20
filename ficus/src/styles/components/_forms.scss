@@ -94,6 +94,9 @@
 
 			.wpcf7-form-control-wrap {
 				flex-shrink: 0;
+				    position: relative;
+					width: 2rem; 
+					height: 2rem;   
 				&::before {
 					content: '';
 					display: block;

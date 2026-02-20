@@ -91,7 +91,9 @@
 			flex-direction: row;
 			align-items: start;
 			gap: 0.8rem;
-
+			a {
+					display: contents;
+			}
 			.wpcf7-form-control-wrap {
 				flex-shrink: 0;
 				    position: relative;

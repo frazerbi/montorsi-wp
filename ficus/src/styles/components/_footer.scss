@@ -43,7 +43,7 @@
 				padding: 0;
 				li {
 					a {
-						@extend %font-primary-xs;
+						@extend %font-primary-s;
 						text-transform: inherit;
 						text-decoration: none;
 						&:hover {
@@ -79,13 +79,14 @@
 			.footer-widget:nth-child(1) {
 				width: 60%;
 				@include breakpoint(tablet-landscape) {
-					width: 50%;				
+					width: 55%;				
 				}
 			}
 			.footer-widget:nth-child(2) {
-				width: 30%;
+				width: 45%;
 				@include breakpoint(tablet-landscape) {
-					width: 50%;				
+					min-width: 20rem;	
+					width: 20%;	
 				}
 			}
 		}

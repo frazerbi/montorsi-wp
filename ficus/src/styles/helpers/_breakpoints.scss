@@ -36,3 +36,39 @@ $bp-list: (
   max-width: 1440px
 );
 
+// Spacing responsive — sovrascrive i preset WP (generati da theme.json in :root)
+// :root:root aumenta la specificità per vincere su WP global styles
+:root:root {
+  // mobile-first: valori base ridotti
+  --wp--preset--spacing--20: 1.2rem;
+  --wp--preset--spacing--30: 1.6rem;
+  --wp--preset--spacing--40: 2rem;
+  --wp--preset--spacing--50: 2.4rem;
+  --wp--preset--spacing--60: 3.2rem;
+  --wp--preset--spacing--70: 4.8rem;
+  --wp--preset--spacing--80: 6.4rem;
+}
+
+@include breakpoint(tablet-portrait) {
+  :root:root {
+    --wp--preset--spacing--20: 1.6rem;
+    --wp--preset--spacing--30: 2rem;
+    --wp--preset--spacing--40: 2.8rem;
+    --wp--preset--spacing--50: 3.6rem;
+    --wp--preset--spacing--60: 4.4rem;
+    --wp--preset--spacing--70: 6.4rem;
+    --wp--preset--spacing--80: 10rem;
+  }
+}
+
+@include breakpoint(tablet-landscape) {
+  :root:root {
+    --wp--preset--spacing--20: 1.8rem;
+    --wp--preset--spacing--30: 2.2rem;
+    --wp--preset--spacing--40: 3.6rem;
+    --wp--preset--spacing--50: 4.4rem;
+    --wp--preset--spacing--60: 5.6rem;
+    --wp--preset--spacing--70: 8.6rem;
+    --wp--preset--spacing--80: 12.6rem;
+  }
+}

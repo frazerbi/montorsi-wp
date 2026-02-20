@@ -126,6 +126,10 @@
 			border-radius: 0.5rem;
 		}
 
+		p:has(input[type='submit']) {
+			align-items: flex-end;
+		}
+
 		input[type='submit'] {
 			@include cta-full;
 		}

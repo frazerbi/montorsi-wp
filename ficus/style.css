@@ -39,4 +39,17 @@ Text Domain: ficus
     #orari-apertura p {
         column-count: 1;
     }
+    .logo-hero-landing figure {
+        max-width: 75vw;
+    }
+    .griglia-vantaggi-landing {
+        gap: 5rem;
+    }
+    .griglia-vantaggi-landing figure {
+        max-width: 25rem;
+    }
+    .column-dx-landing {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }

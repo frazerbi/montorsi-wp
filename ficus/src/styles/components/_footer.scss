@@ -77,13 +77,21 @@
 				min-width: 40rem;	
 			}
 			.footer-widget:nth-child(1) {
-				width: 60%;
-				@include breakpoint(tablet-landscape) {
-					width: 55%;				
+				width: 50%;
+				li {
+					margin-bottom: 1rem;
 				}
+
+				@include breakpoint(tablet-landscape) {
+					width: 60%;				
+				}
+
 			}
 			.footer-widget:nth-child(2) {
 				width: 45%;
+				p {
+					margin-bottom: 1rem;
+				}
 				@include breakpoint(tablet-landscape) {
 					min-width: 20rem;	
 					width: 20%;	

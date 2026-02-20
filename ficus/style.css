@@ -26,3 +26,6 @@ Text Domain: ficus
     height: 100%;
     min-height: 50vh;
 }
+.orari-apertura p {
+    color-scheme: 2;
+}

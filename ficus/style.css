@@ -18,7 +18,7 @@ Text Domain: ficus
     width: 2em;
 }
 
-.tecnologie img {
+.tecnologie figure {
     min-height: 35vh;
 }
 .column-map-dove-siamo iframe {

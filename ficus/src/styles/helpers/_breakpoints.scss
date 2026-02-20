@@ -40,13 +40,13 @@ $bp-list: (
 // :root:root aumenta la specificità per vincere su WP global styles
 :root:root {
   // mobile-first: valori base ridotti
-  --wp--preset--spacing--20: 1.2rem;
-  --wp--preset--spacing--30: 1.6rem;
-  --wp--preset--spacing--40: 2rem;
-  --wp--preset--spacing--50: 2.4rem;
-  --wp--preset--spacing--60: 3.2rem;
-  --wp--preset--spacing--70: 4.8rem;
-  --wp--preset--spacing--80: 6.4rem;
+  --wp--preset--spacing--20: 1.8rem;
+  --wp--preset--spacing--30: 2rem;
+  --wp--preset--spacing--40: 4rem;
+  --wp--preset--spacing--50: 5.4rem;
+  --wp--preset--spacing--60: 6.2rem;
+  --wp--preset--spacing--70: 6.8rem;
+  --wp--preset--spacing--80: 8.4rem;
 }
 
 @include breakpoint(tablet-portrait) {

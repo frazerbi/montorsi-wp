@@ -242,6 +242,10 @@ class Template {
                 return 'single.twig';
             }
             if (is_page()) {
+                $template_slug = get_page_template_slug();
+                if ($template_slug === 'template-landing.php') {
+                    return 'page-landing.twig';
+                }
                 return 'page.twig';
             }
             if (is_archive()) {

@@ -19,7 +19,7 @@ Text Domain: ficus
 }
 
 .tecnologie figure {
-    min-height: 35vh;
+    min-height: 35vh !important;
 }
 .column-map-dove-siamo iframe {
     width: 100%;

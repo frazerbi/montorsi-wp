@@ -47,6 +47,9 @@ a {
 
 p {
     margin: 0;
+    @include breakpoint(tablet-portrait, max) {
+        padding-inline: 0 !important;
+    }
 }
 
 ul {

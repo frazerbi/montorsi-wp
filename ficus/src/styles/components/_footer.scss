@@ -57,7 +57,7 @@
 			}
 		}
 		&--primary {
-			width: 40%;
+			width: 100%;
 			@include breakpoint(tablet-landscape) {
 				width: 40%;
 				.wp-block-image {
@@ -69,8 +69,7 @@
 			display: flex;
 			flex-direction: row;
 			/* gap: 1rem; */
-			min-width: 40rem;
-			width: 50%;
+			width: 100%;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			.footer-widget:nth-child(1) {
@@ -81,7 +80,8 @@
 			}
 			.footer-widget {
 				@include breakpoint(tablet-landscape) {
-					width: 100%;
+					width: 50%;
+					min-width: 40rem;					
 				}
 			}
 		}

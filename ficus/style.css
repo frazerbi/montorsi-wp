@@ -30,6 +30,11 @@ Text Domain: ficus
     column-count: 2;
 }
 @media screen and (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+    }
     .orari-apertura p {
         font-size: var(--wp--preset--font-size--extra-small) !important;
     }
